@@ -22,25 +22,21 @@ export default function Auth({ user, setUser, auth, provider }) {
 
   return (
     <div className="body">
-      <header className="header">
-        <div className="logo">
-          <h1>MyBlog</h1>
-        </div>
-        <div className="auth-button">
-          {user ? (
-            <button onClick={handleSignOut}>Cerrar sesión</button>
-          ) : (
-            <button onClick={handleSignIn}>Iniciar sesión</button>
-          )}
-        </div>
-      </header>
-      {/* <main>
-        <img
-          src="https://img.asmedia.epimg.net/resizer/v2/YZBVQL7EXNF5NESXYCNP2NMMEQ.jpg?auth=93c621f33452faa67e47d50a4803953522276428b7fbe71685fc23e0fbc836b3&width=1288&height=725&smart=true"
-          alt="IA en películas"
-          className="ia-image"
-        />
-      </main> */}
-    </div>
+        <header className="header">
+          <div className="logo">
+            <div>
+              <h1 className="logo-ia">IA</h1>
+              <h1 className="logo-films">Films</h1>
+            </div>
+          </div>
+          <div className="auth-button">
+            {user ? (
+              <button onClick={handleSignOut}>Cerrar sesión</button>
+            ) : (
+              <button onClick={handleSignIn}>Iniciar sesión</button>
+            )}
+          </div>
+        </header>
+      </div>
   );
 }

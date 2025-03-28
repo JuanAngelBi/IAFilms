@@ -1,27 +1,43 @@
+body {
+	background: #000000;
+	margin: 0;
+	padding: 0;
+	background-image: url('https://revistamercado.do/wp-content/uploads/2023/04/9-peliculas-sobre-AI.jpg');
+	background-repeat: no-repeat;
+}
+
 .header {
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
-	background-color: #222;
-	padding: 5px;
+	background-color: #000000;
+	padding: 1px;
   }
 
-  .logo h1 {
-	font-size: 24px; /* Tamaño grande para destacar */
+  .logo-ia {
+	font-size: 18px; /* Tamaño grande para destacar */
 	font-weight: bold; /* Texto en negrita */
 	font-family: 'Arial', sans-serif; /* Fuente moderna */
-	color: white; /* Color del texto */
 	text-transform: uppercase; /* Mayúsculas */
 	letter-spacing: 2px; /* Espaciado entre letras */
-	background: linear-gradient(45deg, #ffe341, #ff4b2b); /* Degradado */
+	background: linear-gradient(45deg, #ffffff, #ffffff);
 	-webkit-background-clip: text; /* Aplica el degradado solo al texto */
 	-webkit-text-fill-color: transparent; /* Hace el texto transparente para mostrar el degradado */
 	display: inline-block;
-	padding: 10px 20px;
-	top: 10px;
-	left: 10px;
-	z-index: 1000;
-	margin: 0;
+	padding: 4px;
+  }
+
+  .logo-films {
+	font-size: 18px; /* Tamaño grande para destacar */
+	font-weight: bold; /* Texto en negrita */
+	font-family: 'Arial', sans-serif; /* Fuente moderna */
+	text-transform: uppercase; /* Mayúsculas */
+	letter-spacing: 2px; /* Espaciado entre letras */
+	background: linear-gradient(45deg, #001bb1, #000351); /* Degradado */
+	-webkit-background-clip: text; /* Aplica el degradado solo al texto */
+	-webkit-text-fill-color: transparent; /* Hace el texto transparente para mostrar el degradado */
+	display: inline-block;
+    padding: 1px;
   }
 
   .ia-image {
@@ -30,22 +46,51 @@
 	object-fit: cover;
   }
 
-body {
-	background: #000000;
-	margin: 0;
-	padding: 0;
-	background-image: url('https://img.asmedia.epimg.net/resizer/v2/YZBVQL7EXNF5NESXYCNP2NMMEQ.jpg?auth=93c621f33452faa67e47d50a4803953522276428b7fbe71685fc23e0fbc836b3&width=1288&height=725&smart=true');
-	background-repeat: no-repeat;
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer-content p {
+    margin-bottom: 10px;
+}
+
+.footer-content nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-content nav ul li {
+    display: inline-block;
+    margin: 0 10px;
+}
+
+.footer-content nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.social-icons a {
+    color: #fff;
+    font-size: 20px;
+    margin: 0 10px;
 }
 
 .post-form {
 	max-width: 500px; /* Ancho máximo del formulario */
     margin: 20px auto; /* Centrar el formulario */
     padding: 20px;
-    border: 1px solid #ffffff;
+    border: 2px solid #000000;
     border-radius: 5px;
-    /* background-color: #f9f9f9; */
-	background-image: url('https://poptv.orange.es/wp-content/uploads/sites/3/2023/06/ia-01.jpg');
+	background-image: url('https://hips.hearstapps.com/hmg-prod/images/big-hero-6-1659021527.jpg');
 	background-position: 60%;
 	background-size: cover;
 	background-repeat: no-repeat;
@@ -73,6 +118,11 @@ body {
     color: black; /* Placeholder negro al hacer foco */
 }
 
+.post-form input[type="text"]:not(:focus):not(:placeholder-shown),
+.post-form textarea:not(:focus):not(:placeholder-shown) {
+    background-color: rgba(255, 255, 255, 0.8); /* Fondo blanco cuando tiene texto y no tiene foco */
+}
+
 .post-form input[type="text"]:focus,
 .post-form textarea:focus {
     background-color: rgba(255, 255, 255, 0.8); /* Cambia a gris claro al hacer foco */
@@ -84,7 +134,7 @@ body {
 }
 
 .post-form button[type="submit"] {
-    background-color: #ffffff; /* Color de fondo del botón */
+    background-color: rgba(255, 255, 255, 0.8);
     color: rgb(0, 0, 0);
     padding: 10px 20px;
     border: #000000;
@@ -94,7 +144,7 @@ body {
 }
 
 .post-form button[type="submit"]:hover {
-    background-color: #333; /* Fondo gris al pasar el cursor */
+    background-color: #000000; /* Fondo gris al pasar el cursor */
     color: white; /* Texto blanco al pasar el cursor */
 }
 
@@ -109,8 +159,8 @@ body {
 	transition: background-color 0.3s ease;
   }
   .auth-button button:hover {
-	background-color: #939393;
-	color: #000000;
+	background-color: #001bb1;
+	color: #ffffff;
   }
 
 .post-list {
