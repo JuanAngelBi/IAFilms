@@ -50,7 +50,7 @@ export default function PostApp() {
 		};
 		fetchPosts();
 	}, []);
-
+	  
 	console.log(posts);
 
 	return (

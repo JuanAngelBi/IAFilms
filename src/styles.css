@@ -15,26 +15,26 @@ body {
   }
 
   .logo-ia {
-	font-size: 18px; /* Tamaño grande para destacar */
+	font-size: 20px; /* Tamaño grande para destacar */
 	font-weight: bold; /* Texto en negrita */
 	font-family: 'Arial', sans-serif; /* Fuente moderna */
 	text-transform: uppercase; /* Mayúsculas */
 	letter-spacing: 2px; /* Espaciado entre letras */
 	background: linear-gradient(45deg, #ffffff, #ffffff);
-	-webkit-background-clip: text; /* Aplica el degradado solo al texto */
+	-webkit-background-clip: text;
 	-webkit-text-fill-color: transparent; /* Hace el texto transparente para mostrar el degradado */
 	display: inline-block;
 	padding: 4px;
   }
 
   .logo-films {
-	font-size: 18px; /* Tamaño grande para destacar */
+	font-size: 20px; /* Tamaño grande para destacar */
 	font-weight: bold; /* Texto en negrita */
 	font-family: 'Arial', sans-serif; /* Fuente moderna */
 	text-transform: uppercase; /* Mayúsculas */
 	letter-spacing: 2px; /* Espaciado entre letras */
 	background: linear-gradient(45deg, #001bb1, #000351); /* Degradado */
-	-webkit-background-clip: text; /* Aplica el degradado solo al texto */
+	-webkit-background-clip: text;
 	-webkit-text-fill-color: transparent; /* Hace el texto transparente para mostrar el degradado */
 	display: inline-block;
     padding: 1px;
