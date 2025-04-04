@@ -102,7 +102,7 @@ export default function Post({ post, db, setPosts, posts }) {
           <textarea
             value={newComment}
             onChange={(e) => setNewComment(e.target.value)}
-            placeholder="Escribe un comentario..."
+            placeholder="Escribe..."
           />
           <button onClick={handleComment}>Agregar Comentario</button>
         </div>
