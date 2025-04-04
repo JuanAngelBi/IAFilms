@@ -57,17 +57,21 @@ export default function Post({ post, db, setPosts, posts }) {
   return (
     <div className="post-card">
       <div className="post-details">
-        <h3>{post.title}</h3>
         <img src={post.image} alt={post.title} />
+        <div>
+          <h3>{post.title}</h3>
+          <p>{post.details}</p>
+        </div>
       </div>
-      <p>{post.details}</p>
-      <button onClick={handleLike}>
-        <img
-          src="https://images.icon-icons.com/1744/PNG/512/3643770-favorite-heart-like-likes-love-loved_113432.png"
-          alt="Like"
-        />
-        {post.likes}
-      </button>
+      <div className="like-dislike">
+        <button onClick={handleLike} className="like">
+          <img src="https://i.imgur.com/e26ummY.png" alt="Like" />
+          {post.likes}
+        </button>
+        <button className="dislike">
+          <img src="https://i.imgur.com/EV5cY3Q.png" alt="Dislike" />
+        </button>
+      </div>
       <div className="user-info">
         <h4>Publicado por:</h4>
         <div className="user-details">
@@ -86,12 +90,13 @@ export default function Post({ post, db, setPosts, posts }) {
                 className="comment-avatar"
               />
               <p>
-                <strong>{comment.createdBy.displayName}:</strong> {comment.commentText}
+                <strong>{comment.createdBy.displayName}:</strong>{" "}
+                {comment.commentText}
               </p>
             </div>
           ))
         ) : (
-          <p>No hay comentarios todavía.</p>
+          <p>Aún no hay comentarios.</p>
         )}
         <div className="add-comment">
           <textarea
